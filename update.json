@@ -1,12 +1,13 @@
 {
-  "version": "2.4.5",
+  "version": "2.4.6",
   "release_date": "2026-10-04",
-  "message": "MANHTRUONG GCODE v2.4.5 – sửa lỗi Quét Nesting ABF.",
+  "message": "MANHTRUONG GCODE v2.4.6 – liên kết Tấm với Sheet Nesting ABF và Lớp với Tags SketchUp.",
   "notes": [
-    "Sửa lỗi NameError: undefined local variable or method 'ignored' khi Quét Nesting ABF.",
+    "Tấm trên Bảng điều khiển lấy từ Sheet thực tế của Nesting ABF.",
+    "Lớp lấy trực tiếp từ Tags của SketchUp và loại bỏ 6 Tag hệ thống: Untagged, ABF_K CAT, ABF_Label, ABF_edgeBanding, ABF_partBorder, ABF_sheetBorder.",
     "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay.",
     "Không tự động kiểm tra hoặc tự động cập nhật nền."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.5.rbz",
-  "sha256": "53875d9d9708c9bc7984f933b4661b9bb49adfaacce17b1ded6afa90a3c91ff8"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.6.rbz",
+  "sha256": "e7eca82a7694aa0d439981bffaa9c9ad66e7c7f64ba45858dce4f06f6c7f182c"
 }
