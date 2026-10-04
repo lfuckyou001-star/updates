@@ -1,13 +1,14 @@
 {
-  "version": "2.4.6",
+  "version": "2.4.7",
   "release_date": "2026-10-04",
-  "message": "MANHTRUONG GCODE v2.4.6 – liên kết Tấm với Sheet Nesting ABF và Lớp với Tags SketchUp.",
+  "message": "MANHTRUONG GCODE v2.4.7 – sửa lỗi Quét Nesting ABF do chuyển danh sách lớp của Sheet sang Array quá sớm.",
   "notes": [
-    "Tấm trên Bảng điều khiển lấy từ Sheet thực tế của Nesting ABF.",
-    "Lớp lấy trực tiếp từ Tags của SketchUp và loại bỏ 6 Tag hệ thống: Untagged, ABF_K CAT, ABF_Label, ABF_edgeBanding, ABF_partBorder, ABF_sheetBorder.",
+    "Sửa lỗi NoMethodError: undefined method 'keys' for []:Array khi Quét Nesting ABF.",
+    "Giữ dữ liệu lớp của từng Sheet dưới dạng Hash trong suốt quá trình thu thập vector và chỉ chuyển sang danh sách sau khi quét xong.",
+    "Giữ liên kết Tấm với Sheet Nesting ABF và Lớp với Tags SketchUp.",
     "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay.",
     "Không tự động kiểm tra hoặc tự động cập nhật nền."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.6.rbz",
-  "sha256": "e7eca82a7694aa0d439981bffaa9c9ad66e7c7f64ba45858dce4f06f6c7f182c"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.7.rbz",
+  "sha256": "1dbdd2d7146f381205f5488c4b1869cdb3ef688225d4b5d76722e678fd24914f"
 }
