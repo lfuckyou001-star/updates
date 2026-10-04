@@ -1,15 +1,12 @@
 {
-  "version": "2.4.4",
+  "version": "2.4.5",
   "release_date": "2026-10-04",
-  "message": "MANHTRUONG GCODE v2.4.4 – cập nhật Bảng điều khiển, Quản lý Nesting và liên kết Dao vật lý/Cấu hình/Tấm/Lớp.",
+  "message": "MANHTRUONG GCODE v2.4.5 – sửa lỗi Quét Nesting ABF.",
   "notes": [
-    "Dao vật lý trên Bảng điều khiển lấy từ Cài đặt dao.",
-    "Cấu hình trên Bảng điều khiển lấy từ Thư viện dao.",
-    "Tấm lấy từ Sheet/Nesting ABF.",
-    "Lớp lấy từ Tags SketchUp và loại bỏ Untagged, ABF_K CAT, ABF_Label, ABF_edgeBanding, ABF_partBorder, ABF_sheetBorder.",
-    "Dao khoan: Hướng cắt và Điểm bắt đầu hiển thị mờ, không cho lựa chọn; vị trí tự về Tâm.",
-    "Cắm thẳng: Chiều dài ramp hiển thị mờ; ba chế độ dốc cho phép thay đổi Chiều dài ramp."
+    "Sửa lỗi NameError: undefined local variable or method 'ignored' khi Quét Nesting ABF.",
+    "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay.",
+    "Không tự động kiểm tra hoặc tự động cập nhật nền."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.4.rbz",
-  "sha256": "e85b875c82352b28b52f269ab5b7aeac6b0153906565e4c6974ac6c4f6d9eaa2"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.5.rbz",
+  "sha256": "53875d9d9708c9bc7984f933b4661b9bb49adfaacce17b1ded6afa90a3c91ff8"
 }
