@@ -1,14 +1,13 @@
 {
-  "version": "2.4.8",
+  "version": "2.4.9",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.4.8 – đọc trực tiếp cấu trúc Sheet ABF và liên kết Layer với Tags SketchUp theo dữ liệu thực trong file TEST.skp.",
+  "message": "MANHTRUONG GCODE v2.4.9 – sửa lỗi khởi động do ROOT được tham chiếu ngoài module.",
   "notes": [
-    "Đọc Sheet ABF trực tiếp từ dictionary ABF: sheet-id, sheet-dimension, sheet-thickness, sheet-type và cấu trúc __17mm-sheet-*.",
-    "Giữ liên kết vector → Sheet thật của ABF, không tạo Sheet giả ABF Root.",
-    "Lớp lấy trực tiếp từ Tags SketchUp và loại bỏ đúng 6 Tag hệ thống: Untagged, ABF_K CAT, ABF_Label, ABF_edgeBanding, ABF_partBorder, ABF_sheetBorder.",
-    "Bổ sung thông tin Sheet và Layer trong Bảng điều khiển và Quản lý Nesting.",
-    "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay; không tự động kiểm tra nền."
+    "Sửa lỗi Load Errors: uninitialized constant ROOT khi SketchUp nạp plugin.",
+    "Giữ nguyên cấu trúc đọc Sheet/Lớp ABF đã bổ sung ở v2.4.8.",
+    "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay.",
+    "Không tự động kiểm tra hoặc tự động cập nhật nền."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.8.rbz",
-  "sha256": "f7c2ec91fa5e979e66cff8f15d51d3ff736b7ae4e5f32cb05ed3e52d7f15123e"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.9.rbz",
+  "sha256": "81dbc1bef269f90639c35cd28c51adc90e3ebf60e69fae35ed378a9df663768b"
 }
