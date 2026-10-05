@@ -1,16 +1,14 @@
 {
-  "version": "2.5.6",
+  "version": "2.5.7",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.5.6 – sửa lỗi quét Nesting ABF và chuyển sang quét hoàn toàn thủ công.",
+  "message": "MANHTRUONG GCODE v2.5.7 – sửa Reader ABF an toàn kiểu dữ liệu và tắt hoàn toàn quét tự động khi mở plugin.",
   "notes": [
-    "Sửa lỗi TypeError: no implicit conversion of String into Integer khi đọc dữ liệu ABF/AttributeDictionary.",
-    "Bổ sung lớp đọc AttributeDictionary an toàn để không dùng chuỗi làm chỉ số của Array.",
-    "Không tự động quét Nesting khi mở plugin.",
-    "Chỉ bắt đầu quét khi người dùng bấm Quét Nesting.",
-    "Mở plugin chỉ nạp cấu hình và giữ trạng thái Chưa quét cho đến khi người dùng thao tác.",
-    "Giữ nguồn Nesting ABF Solutions và Tất cả Nesting trong SketchUp.",
-    "Giữ thứ tự gia công Layer/Gadget + thứ tự Thư viện dao."
+    "Không tự động quét Nesting khi mở plugin; chỉ quét khi người dùng bấm Quét Nesting.",
+    "Sửa đọc AttributeDictionary/Hash/Array để tránh lỗi TypeError: no implicit conversion of String into Integer.",
+    "Nếu một entity ABF bị dữ liệu bất thường, Reader không làm hỏng toàn bộ lần quét.",
+    "Giữ nguồn Nesting ABF Solutions và tùy chọn quét Nesting khác trong SketchUp.",
+    "Giữ thứ tự gia công Layer/Gadget và Thư viện dao làm tiêu chí phụ."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.6.rbz",
-  "sha256": "8a8bc631862d368d68ae590845168007c43c3fe34ece4f7fcf7e2a5d6b379244"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.7.rbz",
+  "sha256": "80e764a8e132a7c2ddb0eec32b391475b6ffe71e722130b7c5cb856834cad5b4"
 }
