@@ -1,11 +1,14 @@
 {
-  "version": "2.5.13",
+  "version": "2.5.14",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.5.13",
+  "message": "MANHTRUONG GCODE v2.5.14 – đọc lại cấu trúc Nesting ABF theo Sheet vật lý, giữ mặt sau và tăng độ chính xác liên kết Layer–dao/Post Processor.",
   "notes": [
-    "Bản cập nhật MANHTRUONG GCODE v2.5.13.",
-    "Sử dụng cùng cơ chế cập nhật trực tiếp của MANHTRUONG GCODE."
+    "Sheet được nhận diện theo sheet-id vật lý; các view is-bottom-sheet được giữ là mặt sau của đúng Sheet thay vì gộp mất dữ liệu.",
+    "Quản lý Nesting hiển thị riêng Mặt trước và Mặt sau trong cùng Sheet vật lý.",
+    "Liên kết cấu hình dao không chỉ dựa vào tên Layer hiển thị mà còn kiểm tra alias Tag, cutting-layer-postfix và cutting-layer-original-name.",
+    "Post Processor .pp đọc thêm FILE_EXTENSION, UNITS, LINE_NUMBER_START, LINE_NUMBER_INCREMENT, LINE_NUMBER_MAXIMUM, LINE_ENDING và VAR; các block HEADER/TOOLCHANGE/RAPID_MOVE/FIRST_FEED_MOVE/FEED_MOVE/ARC/FOOTER được sử dụng khi xuất.",
+    "Không hard-code số Vector hoặc Layer; số liệu vẫn được tính từ dữ liệu Nesting thực tế trong model."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.13.rbz",
-  "sha256": "47eca1fd0fd857d282ed00bdc63731043a8b9ec9bf8c8c9449019335226baae2"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.14.rbz",
+  "sha256": "d98efea0e66d7e83caa7e2de2e762633c57204adb28762770ddbf5ff8125cb3d"
 }
