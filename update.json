@@ -1,13 +1,14 @@
 {
-  "version": "2.4.9",
+  "version": "2.5.1",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.4.9 – sửa lỗi khởi động do ROOT được tham chiếu ngoài module.",
+  "message": "MANHTRUONG GCODE v2.5.1 – sửa thứ tự gia công theo Layer kiểu Gadget kết hợp thứ tự Thư viện dao.",
   "notes": [
-    "Sửa lỗi Load Errors: uninitialized constant ROOT khi SketchUp nạp plugin.",
-    "Giữ nguyên cấu trúc đọc Sheet/Lớp ABF đã bổ sung ở v2.4.8.",
-    "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay.",
-    "Không tự động kiểm tra hoặc tự động cập nhật nền."
+    "Layer không thuộc TREN/TRAI/PHAI/DUOI được gia công trước.",
+    "Thứ tự Layer kiểu Gadget: TREN11,TREN12... → TRAI11,TRAI12... → PHAI11,PHAI12... → TREN21,TREN22... → TRAI21... → PHAI21... → DUOI11,DUOI12...",
+    "Trong cùng thứ tự Layer, dùng thứ tự Thư viện dao 1..N làm tiêu chí phụ; các Layer vẫn được giữ đầy đủ.",
+    "Loại trừ Layer0 và 6 Tag hệ thống theo cấu hình hiện tại.",
+    "Giữ cập nhật thủ công qua Cập nhật → Kiểm tra cập nhật → Cập nhật ngay."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.4.9.rbz",
-  "sha256": "81dbc1bef269f90639c35cd28c51adc90e3ebf60e69fae35ed378a9df663768b"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.1.rbz",
+  "sha256": "e1ec5938d73ce355d367aeffbdc1fdade66d7d5992a4b587ac6d8cb6b2ac754a"
 }
