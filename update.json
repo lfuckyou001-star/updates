@@ -1,14 +1,15 @@
 {
-  "version": "2.5.11",
+  "version": "2.5.12",
   "release_date": "2026-10-05",
-  "message": "Sửa bộ lọc Nesting ABF để không lọc sạch dữ liệu khi vector chỉ mang Tag Layer_*; tự động cài cập nhật ngay sau khi tải xong.",
+  "message": "Sửa cách đếm Vector theo contour kín, lọc Layer có dữ liệu gia công thực, khôi phục 2 Sheet/view ABF và làm lại luồng xuất G-code an toàn.",
   "notes": [
-    "Sửa lỗi TEST.skp quét Nesting ABF Solutions thành 0 vector / 0 Sheet / 0 Layer.",
-    "Đọc fallback các Tag ABF machining khi metadata cutting-* không nằm trực tiếp trên Edge.",
-    "Loại các Layer phụ như Label, edgeBanding, partBorder, sheetBorder, markSquare và ABF_K CAT khỏi vector gia công.",
-    "Bỏ hoàn toàn hộp hỏi xác nhận sau khi tải cập nhật; tải xong sẽ tự cài ngay vào thư mục plugin hiện tại.",
-    "Sau khi cài thành công vẫn yêu cầu tắt SketchUp và mở lại để nạp mã mới sạch."
+    "Đếm Vector theo contour kín thay vì đếm từng Edge SketchUp.",
+    "Chỉ đưa Layer có contour kín vào CAM, tránh 94 Tag phụ thành 94 Layer gia công.",
+    "Đếm Sheet/view theo tên Sheet ABF khi ABF dùng chung sheet-id.",
+    "Xuất G-code theo contour, không tạo rapid/plunge cho từng Edge.",
+    "Bỏ hoàn toàn bước hỏi xác nhận sau khi tải cập nhật; tải xong tự cài ngay.",
+    "Sau khi cập nhật thành công vẫn yêu cầu tắt SketchUp và mở lại."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.11.rbz",
-  "sha256": "efc992c4fbbe44de08335e4832dab078db11bfdc7b76c721517a85c5cd153135"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.12.rbz",
+  "sha256": "a268935559780c725c209b9521f50743157c1e08756c2a7629cbc92654525cd8"
 }
