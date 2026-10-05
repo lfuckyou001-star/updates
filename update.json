@@ -1,14 +1,15 @@
 {
-  "version": "2.5.14",
+  "version": "2.5.15",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.5.14 – đọc lại cấu trúc Nesting ABF theo Sheet vật lý, giữ mặt sau và tăng độ chính xác liên kết Layer–dao/Post Processor.",
+  "message": "MANHTRUONG GCODE v2.5.15 – sửa gốc lỗi Sheet 2 mặt trước/mặt sau, giữ Layer theo Tag ABF, chống đếm trùng vector và đưa toàn bộ Layer vào bước tạo G-code để kiểm tra liên kết.",
   "notes": [
-    "Sheet được nhận diện theo sheet-id vật lý; các view is-bottom-sheet được giữ là mặt sau của đúng Sheet thay vì gộp mất dữ liệu.",
-    "Quản lý Nesting hiển thị riêng Mặt trước và Mặt sau trong cùng Sheet vật lý.",
-    "Liên kết cấu hình dao không chỉ dựa vào tên Layer hiển thị mà còn kiểm tra alias Tag, cutting-layer-postfix và cutting-layer-original-name.",
-    "Post Processor .pp đọc thêm FILE_EXTENSION, UNITS, LINE_NUMBER_START, LINE_NUMBER_INCREMENT, LINE_NUMBER_MAXIMUM, LINE_ENDING và VAR; các block HEADER/TOOLCHANGE/RAPID_MOVE/FIRST_FEED_MOVE/FEED_MOVE/ARC/FOOTER được sử dụng khi xuất.",
-    "Không hard-code số Vector hoặc Layer; số liệu vẫn được tính từ dữ liệu Nesting thực tế trong model."
+    "Không còn map sheet-id theo kiểu 1 ID = 1 view; Sheet 2 và Sheet 2-bottom dùng chung id=2 nhưng vẫn giữ riêng từng view.",
+    "Quản lý Nesting lấy vector trực tiếp từ từng view đã quét, không lấy lại toàn bộ vector theo sheet-id.",
+    "Layer dùng Tag/Lớp thực làm định danh chính; cutting-layer-postfix/original-name chỉ dùng làm alias để liên kết dao/cấu hình, tránh gộp mất Layer.",
+    "Loại trùng contour hình học trong cùng Layer + Sheet view trước khi đếm VECTOR.",
+    "Trang G-code gửi toàn bộ Layer vào bộ tạo mã để hiển thị rõ Layer nào đã/ chưa liên kết dao; không còn lọc mất toàn bộ dữ liệu trước khi chạy.",
+    "Post Processor .pp tiếp tục được dùng làm nguồn HEADER/TOOLCHANGE/RAPID/FIRST_FEED/FEED/ARC/FOOTER."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.14.rbz",
-  "sha256": "d98efea0e66d7e83caa7e2de2e762633c57204adb28762770ddbf5ff8125cb3d"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.15.rbz",
+  "sha256": "89195d6321ea81157f8143b8539d3b8a6497e5456ac5d8ced05acc912cd68532"
 }
