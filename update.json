@@ -1,12 +1,13 @@
 {
-  "version": "2.5.8",
+  "version": "2.5.9",
   "release_date": "2026-10-05",
-  "message": "Sửa lỗi Quét Nesting ABF và yêu cầu khởi động lại SketchUp sau khi cập nhật.",
+  "message": "Khôi phục các ô thống kê trên Bảng điều khiển, sửa xuất G-code và thêm dòng chọn vị trí xuất.",
   "notes": [
-    "Sửa lỗi TypeError: no implicit conversion of String into Integer khi ghi Layer vào Sheet.",
-    "Cập nhật thành công sẽ hiện thông báo: Hãy tắt SketchUp và mở lại.",
-    "Không tự động mở lại plugin sau khi cập nhật; người dùng chủ động khởi động lại SketchUp."
+    "Khôi phục Vector, Layer, Sheet, Dao vật lý và Cấu hình dao trên Bảng điều khiển.",
+    "Thêm dòng “Xuất vào vị trí nào” và nút “Chọn vị trí…”.",
+    "Sửa luồng xuất G-code và bổ sung thông tin lỗi chi tiết nếu có.",
+    "Không tự động quét Nesting khi mở plugin."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.8.rbz",
-  "sha256": "44a4f899a2ffaa03f232d420f7dc76024582cb97d4b9ea5c6ce078dd4bbef6ae"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.9.rbz",
+  "sha256": "9a78df37c820a6a7e8fdde98680f0b81fddca1b770bdbcd09d221c2450a27852"
 }
