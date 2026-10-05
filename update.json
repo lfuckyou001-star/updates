@@ -1,13 +1,13 @@
 {
-  "version": "2.5.9",
+  "version": "2.5.10",
   "release_date": "2026-10-05",
-  "message": "Khôi phục các ô thống kê trên Bảng điều khiển, sửa xuất G-code và thêm dòng chọn vị trí xuất.",
+  "message": "Sửa bộ đọc Nesting ABF để khớp dữ liệu thực của Nhat Minh trên TEST.skp; khôi phục sơ đồ Nesting; ổn định xuất G-code.",
   "notes": [
-    "Khôi phục Vector, Layer, Sheet, Dao vật lý và Cấu hình dao trên Bảng điều khiển.",
-    "Thêm dòng “Xuất vào vị trí nào” và nút “Chọn vị trí…”.",
-    "Sửa luồng xuất G-code và bổ sung thông tin lỗi chi tiết nếu có.",
-    "Không tự động quét Nesting khi mở plugin."
+    "Khớp bộ đếm Nesting ABF theo dữ liệu cutting thực, loại bỏ các Layer_* phụ không phải đường dao.",
+    "Khôi phục hiển thị sơ đồ ABF trong Quản lý Nesting.",
+    "Gia cố luồng xuất G-code và báo lỗi chi tiết hơn.",
+    "Giữ cập nhật thủ công và yêu cầu tắt SketchUp, mở lại sau khi cập nhật thành công."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.9.rbz",
-  "sha256": "9a78df37c820a6a7e8fdde98680f0b81fddca1b770bdbcd09d221c2450a27852"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.10.rbz",
+  "sha256": "db3080b9fb1c7a20f9a50b8a49f60d09727989305688e5d29f003c3ff871c681"
 }
