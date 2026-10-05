@@ -1,17 +1,15 @@
 {
-  "version": "2.5.2",
+  "version": "2.5.4",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.5.2 – sửa bộ lọc vector Nesting, khôi phục sơ đồ 177 vector/27 layer/2 sheet theo dữ liệu Nesting và đưa Bảng điều khiển về bố cục tổng quan + tiến trình.",
+  "message": "MANHTRUONG GCODE v2.5.4 – sửa bộ đọc Nesting ABF Solutions theo dữ liệu ABF thực tế trong TEST.skp.",
   "notes": [
-    "Không còn quét toàn bộ Edge nhìn thấy của SketchUp; chỉ nhận vector thuộc Nesting thực.",
-    "ABF đọc cutting metadata truyền từ Group/Component cha xuống Edge để không bỏ sót vector.",
-    "Nesting không phải ABF chỉ nhận geometry nằm trong container có dấu hiệu Sheet/Panel/Board/Nesting.",
-    "Bảng điều khiển có 5 ô tổng quan: Vector, Layer, Sheet, Dao vật lý, Cấu hình đường dao và bên dưới là Tiến trình công việc.",
-    "Thứ tự gia công dùng hai tiêu chí: thứ tự Layer/Gadget là chính; Thư viện dao 1,2,...29,... là phụ trong cùng thứ tự Layer.",
-    "Loại khỏi Layer: Layer0 và 6 Tag hệ thống ABF.",
-    "Giữ tên Sheet ABF thực như __17mm-sheet-1 thay vì đổi thành Sheet 1.",
-    "Không tự động cập nhật nền; tiếp tục Cập nhật → Kiểm tra cập nhật → Cập nhật ngay."
+    "Nguồn Nesting có lựa chọn Nesting ABF Solutions hoặc Tất cả Nesting trong SketchUp.",
+    "ABF Connector đọc dictionary ABF theo các khóa thực tế: sheet-id, sheet-dimension, sheet-thickness, sheet-type, cutting-layer-index, cutting-part-index, cutting-preview-index, cutting-layer-original-name và cutting-layer-postfix.",
+    "Layer gia công của ABF lấy từ cutting-layer-postfix như TREN 11, TREN 12, TRAI 11, PHAI 11... thay vì lấy Tag mang dữ liệu ABF.",
+    "Sheet được ghép lại theo sheet-id để giữ tên Sheet ABF thật và cho phép nhiều view cùng một Sheet vật liệu.",
+    "Giữ thứ tự gia công Layer/Gadget làm tiêu chí chính; thứ tự Thư viện dao 1 đến 29 và các cấu hình phía sau là tiêu chí phụ.",
+    "Thư viện dao hỗ trợ Import .nmtools và Export .nmtools, đồng thời lưu thêm trường tương thích kiểu machine_tools/tools/layer_map/layer_order/global_settings."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.2.rbz",
-  "sha256": "93859419b8b47cf0f951bc2836be3f5b5f46bb4c460551f773e16a6f5b87421a"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.4.rbz",
+  "sha256": "86ad46577afb9749bab22b8eedc4b203c1c6d730c8e452257dba883f88948b01"
 }
