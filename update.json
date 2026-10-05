@@ -1,15 +1,17 @@
 {
-  "version": "2.5.4",
+  "version": "2.5.5",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.5.4 – sửa bộ đọc Nesting ABF Solutions theo dữ liệu ABF thực tế trong TEST.skp.",
+  "message": "MANHTRUONG GCODE v2.5.5 – sửa ABF Reader để nhận vector theo Tag Layer_* thực tế của TEST.skp và giữ tiến trình công việc trên Bảng điều khiển.",
   "notes": [
-    "Nguồn Nesting có lựa chọn Nesting ABF Solutions hoặc Tất cả Nesting trong SketchUp.",
-    "ABF Connector đọc dictionary ABF theo các khóa thực tế: sheet-id, sheet-dimension, sheet-thickness, sheet-type, cutting-layer-index, cutting-part-index, cutting-preview-index, cutting-layer-original-name và cutting-layer-postfix.",
-    "Layer gia công của ABF lấy từ cutting-layer-postfix như TREN 11, TREN 12, TRAI 11, PHAI 11... thay vì lấy Tag mang dữ liệu ABF.",
-    "Sheet được ghép lại theo sheet-id để giữ tên Sheet ABF thật và cho phép nhiều view cùng một Sheet vật liệu.",
-    "Giữ thứ tự gia công Layer/Gadget làm tiêu chí chính; thứ tự Thư viện dao 1 đến 29 và các cấu hình phía sau là tiêu chí phụ.",
-    "Thư viện dao hỗ trợ Import .nmtools và Export .nmtools, đồng thời lưu thêm trường tương thích kiểu machine_tools/tools/layer_map/layer_order/global_settings."
+    "Sửa lỗi Quét Nesting ABF không trả về Vector/Layer dù cùng một TEST.skp Nhat Minh CNC đọc được 177 vector.",
+    "ABF Reader nhận geometry theo Tag Layer_* thực tế của ABF khi dictionary ABF không nằm trực tiếp trên Edge.",
+    "Ưu tiên cutting-layer-postfix/cutting-layer-original-name khi ABF metadata có trên container.",
+    "Giữ liên kết Sheet ABF theo sheet-id và dữ liệu Sheet thực tế khi có thể xác định từ model.",
+    "Bảng điều khiển thu gọn chỉ còn Nguồn Nesting, Quét Nesting và Tiến trình công việc.",
+    "Giữ thứ tự Layer/Gadget là tiêu chí chính và thứ tự Thư viện dao 1..N là tiêu chí phụ.",
+    "Giữ Import/Export thư viện dao .nmtools.",
+    "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay. Không tự động cập nhật nền."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.4.rbz",
-  "sha256": "86ad46577afb9749bab22b8eedc4b203c1c6d730c8e452257dba883f88948b01"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.5.rbz",
+  "sha256": "4dee889d07f4733ef770fcdc8d81447565ae081ec2e5fb5e5e794028d3c3c56b"
 }
