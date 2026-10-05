@@ -1,13 +1,14 @@
 {
-  "version": "2.5.10",
+  "version": "2.5.11",
   "release_date": "2026-10-05",
-  "message": "Sửa bộ đọc Nesting ABF để khớp dữ liệu thực của Nhat Minh trên TEST.skp; khôi phục sơ đồ Nesting; ổn định xuất G-code.",
+  "message": "Sửa bộ lọc Nesting ABF để không lọc sạch dữ liệu khi vector chỉ mang Tag Layer_*; tự động cài cập nhật ngay sau khi tải xong.",
   "notes": [
-    "Khớp bộ đếm Nesting ABF theo dữ liệu cutting thực, loại bỏ các Layer_* phụ không phải đường dao.",
-    "Khôi phục hiển thị sơ đồ ABF trong Quản lý Nesting.",
-    "Gia cố luồng xuất G-code và báo lỗi chi tiết hơn.",
-    "Giữ cập nhật thủ công và yêu cầu tắt SketchUp, mở lại sau khi cập nhật thành công."
+    "Sửa lỗi TEST.skp quét Nesting ABF Solutions thành 0 vector / 0 Sheet / 0 Layer.",
+    "Đọc fallback các Tag ABF machining khi metadata cutting-* không nằm trực tiếp trên Edge.",
+    "Loại các Layer phụ như Label, edgeBanding, partBorder, sheetBorder, markSquare và ABF_K CAT khỏi vector gia công.",
+    "Bỏ hoàn toàn hộp hỏi xác nhận sau khi tải cập nhật; tải xong sẽ tự cài ngay vào thư mục plugin hiện tại.",
+    "Sau khi cài thành công vẫn yêu cầu tắt SketchUp và mở lại để nạp mã mới sạch."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.10.rbz",
-  "sha256": "db3080b9fb1c7a20f9a50b8a49f60d09727989305688e5d29f003c3ff871c681"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.11.rbz",
+  "sha256": "efc992c4fbbe44de08335e4832dab078db11bfdc7b76c721517a85c5cd153135"
 }
