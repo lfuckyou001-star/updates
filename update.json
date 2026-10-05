@@ -1,17 +1,16 @@
 {
-  "version": "2.5.5",
+  "version": "2.5.6",
   "release_date": "2026-10-05",
-  "message": "MANHTRUONG GCODE v2.5.5 – sửa ABF Reader để nhận vector theo Tag Layer_* thực tế của TEST.skp và giữ tiến trình công việc trên Bảng điều khiển.",
+  "message": "MANHTRUONG GCODE v2.5.6 – sửa lỗi quét Nesting ABF và chuyển sang quét hoàn toàn thủ công.",
   "notes": [
-    "Sửa lỗi Quét Nesting ABF không trả về Vector/Layer dù cùng một TEST.skp Nhat Minh CNC đọc được 177 vector.",
-    "ABF Reader nhận geometry theo Tag Layer_* thực tế của ABF khi dictionary ABF không nằm trực tiếp trên Edge.",
-    "Ưu tiên cutting-layer-postfix/cutting-layer-original-name khi ABF metadata có trên container.",
-    "Giữ liên kết Sheet ABF theo sheet-id và dữ liệu Sheet thực tế khi có thể xác định từ model.",
-    "Bảng điều khiển thu gọn chỉ còn Nguồn Nesting, Quét Nesting và Tiến trình công việc.",
-    "Giữ thứ tự Layer/Gadget là tiêu chí chính và thứ tự Thư viện dao 1..N là tiêu chí phụ.",
-    "Giữ Import/Export thư viện dao .nmtools.",
-    "Giữ quy trình Cập nhật → Kiểm tra cập nhật → Cập nhật ngay. Không tự động cập nhật nền."
+    "Sửa lỗi TypeError: no implicit conversion of String into Integer khi đọc dữ liệu ABF/AttributeDictionary.",
+    "Bổ sung lớp đọc AttributeDictionary an toàn để không dùng chuỗi làm chỉ số của Array.",
+    "Không tự động quét Nesting khi mở plugin.",
+    "Chỉ bắt đầu quét khi người dùng bấm Quét Nesting.",
+    "Mở plugin chỉ nạp cấu hình và giữ trạng thái Chưa quét cho đến khi người dùng thao tác.",
+    "Giữ nguồn Nesting ABF Solutions và Tất cả Nesting trong SketchUp.",
+    "Giữ thứ tự gia công Layer/Gadget + thứ tự Thư viện dao."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.5.rbz",
-  "sha256": "4dee889d07f4733ef770fcdc8d81447565ae081ec2e5fb5e5e794028d3c3c56b"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.6.rbz",
+  "sha256": "8a8bc631862d368d68ae590845168007c43c3fe34ece4f7fcf7e2a5d6b379244"
 }
