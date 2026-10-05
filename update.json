@@ -1,15 +1,11 @@
 {
-  "version": "2.5.12",
+  "version": "2.5.13",
   "release_date": "2026-10-05",
-  "message": "Sửa cách đếm Vector theo contour kín, lọc Layer có dữ liệu gia công thực, khôi phục 2 Sheet/view ABF và làm lại luồng xuất G-code an toàn.",
+  "message": "MANHTRUONG GCODE v2.5.13",
   "notes": [
-    "Đếm Vector theo contour kín thay vì đếm từng Edge SketchUp.",
-    "Chỉ đưa Layer có contour kín vào CAM, tránh 94 Tag phụ thành 94 Layer gia công.",
-    "Đếm Sheet/view theo tên Sheet ABF khi ABF dùng chung sheet-id.",
-    "Xuất G-code theo contour, không tạo rapid/plunge cho từng Edge.",
-    "Bỏ hoàn toàn bước hỏi xác nhận sau khi tải cập nhật; tải xong tự cài ngay.",
-    "Sau khi cập nhật thành công vẫn yêu cầu tắt SketchUp và mở lại."
+    "Bản cập nhật MANHTRUONG GCODE v2.5.13.",
+    "Sử dụng cùng cơ chế cập nhật trực tiếp của MANHTRUONG GCODE."
   ],
-  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.12.rbz",
-  "sha256": "a268935559780c725c209b9521f50743157c1e08756c2a7629cbc92654525cd8"
+  "rbz_url": "https://raw.githubusercontent.com/lfuckyou001-star/updates/main/releases/MANHTRUONG_GCODE_v2.5.13.rbz",
+  "sha256": "47eca1fd0fd857d282ed00bdc63731043a8b9ec9bf8c8c9449019335226baae2"
 }
